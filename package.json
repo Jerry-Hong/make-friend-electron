@@ -77,6 +77,8 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
+    "axios": "^0.12.0",
+    "classnames": "^2.2.5",
     "css-modules-require-hook": "^4.0.0",
     "electron-debug": "^1.0.0",
     "font-awesome": "^4.6.3",
@@ -88,6 +90,7 @@
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
+    "simplewebrtc": "^2.2.0",
     "source-map-support": "^0.4.0"
   },
   "devEngines": {

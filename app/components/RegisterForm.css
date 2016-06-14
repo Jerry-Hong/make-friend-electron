@@ -1,0 +1,31 @@
+.registerForm {
+    position: absolute;
+    top: 100px;
+    bottom: 150px;
+    left: 300px;
+    right: 300px;
+    background-color: rgba(255, 105, 98, 1);
+    border-radius: 2px;
+    padding: 30px;
+}
+
+.registerForm h2 {
+    margin-bottom: 15px;
+}
+
+.submit {
+    margin-top: 30px;
+    background-color: #f52c3f;
+}
+
+.submit:hover {
+    background-color: #f34152;
+    transform: translateY(-3px);
+    transition: all .3s;
+}
+
+.submit:active {
+    background-color: #f52c3f;
+    transform: translateY(2px);
+    transition: all .3s;
+}
