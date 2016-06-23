@@ -34,3 +34,11 @@ dist
 release
 main.js
 main.js.map
+make-friend-electron-win32-x64.zip
+make-friend-electron-linux-ia32/locales
+make-friend-electron-darwin-x64
+make-friend-electron-linux-ia32
+make-friend-electron-linux-x64
+make-friend-electron-mas-x64
+make-friend-electron-win32-ia32
+make-friend-electron-win32-x64

@@ -4,6 +4,8 @@ import URL from '../utils/URL.js';
 export const GET_FRIENDS_REQUEST = 'GET_FRIENDS_REQUEST';
 export const GET_FRIENDS_SUCCESS = 'GET_FRIENDS_SUCCESS';
 export const GET_FRIENDS_FAIL = 'GET_FRIENDS_FAIL';
+export const SET_CURRENT_FRIEND = 'SET_CURRENT_FRIEND';
+
 
 export const getFriends = () => {
     return dispatch => {
@@ -17,9 +19,17 @@ export const getFriends = () => {
     }
 }
 
+export const setCurrentFriend = (index) => {
+    return {
+        type: SET_CURRENT_FRIEND,
+        index
+    }
+}
+
 const initialState = {
     isRequesting: false,
-    list: []
+    list: [],
+    index: 0
 };
 
 export default function(state = initialState, action) {
@@ -30,6 +40,11 @@ export default function(state = initialState, action) {
         return { list: action.payload, errorMessage: '', isRequesting: false };
     case GET_FRIENDS_FAIL:
         return { list: [], errorMessage: action.payload.message, isRequesting: false };
+    case SET_CURRENT_FRIEND:
+        return {
+            ...state,
+            index: action.index
+        }
     default:
         return state;
     }

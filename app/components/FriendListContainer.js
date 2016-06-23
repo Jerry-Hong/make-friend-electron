@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FriendList from './FriendList.js';
-import { getFriends } from '../reducers/friends.js';
+import { getFriends, setCurrentFriend } from '../reducers/friends.js';
 
 
 class FriendListContainer extends Component {
@@ -21,4 +21,4 @@ class FriendListContainer extends Component {
 export default connect(state => ({
     friendList: state.friends.list,
     isRequesting: state.friends.isRequesting
-}), { getFriends })(FriendListContainer);
+}), { getFriends, setCurrentFriend })(FriendListContainer);

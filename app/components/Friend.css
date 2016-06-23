@@ -1,0 +1,59 @@
+.friend {
+    position: absolute;
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    color: black;
+    text-align: center;   
+}
+
+.title {
+    color: gray;
+}
+
+
+.headImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: pink;
+}
+
+.info {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.info label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.circleBtn {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background-color: #1abc9c;
+}
+
+.cancleBtn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 100px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+    background-color: red;
+}
+

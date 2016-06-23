@@ -45,7 +45,7 @@ a:hover {
   cursor: pointer;
 }
 
-input[type="text"], [type="password"], select {
+input[type="text"], [type="password"], [type="email"], select {
   border: none;
   width: 250px;
   padding: 10px 10px;
@@ -80,4 +80,21 @@ button {
 .scale {
   transform: scale(2);
   transition: all .5s;
+}
+
+
+.friend-enter {
+    transform: translateX(500px);
+}
+.friend-enter.friend-enter-active {
+    transform: translateX(0);
+    transition: all .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.friend-leave {
+    transform: translateX(0px);
+}
+.friend-leave.friend-leave-active {
+    transform: translateX(500px);
+    transition: all .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
